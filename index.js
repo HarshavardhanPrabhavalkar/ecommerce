@@ -43,8 +43,8 @@ app.use("/subscriptions", require("./routes/subscription"));
 
 
 
-
-app.listen(8081, function () {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
     console.log("node server started");
 });
 
